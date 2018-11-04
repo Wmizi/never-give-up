@@ -1,0 +1,56 @@
+列表布局，在固定大小的容器内，均匀放置几个元素
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            list-style-type: none;
+        }
+        .contain{
+            width: 500px;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        li{
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 92px;
+            height: 90px;
+            background-color: cadetblue;
+        }
+        li:last-child{
+            margin-right: -10px;
+        }
+    </style>
+</head>
+<body>  
+    <div class="contain">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+			<!-- 最后这一个li因为margin-right的原因会被挤到下面去，所以要删除最后一个的margin-left值 -->
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+			<!-- 最后这一个li因为margin-right的原因会被挤到下面去，所以要删除最后一个的margin-left值 -->
+        </ul>
+    </div>
+
+</body>
+</html>
+总宽度W 固定间距P 元素个数N
+（W-P*N-1)/N=每个元素的宽度
