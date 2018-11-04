@@ -1,0 +1,55 @@
+圣杯布局，自适应等高布局
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .contain{
+            width: 90%; 
+            margin: 50px auto;  
+            overflow: hidden; /* 注意理解这一部分的意思  */       
+        }
+        .one{
+            float: left;
+            width: 33.3%;
+            height: 300px;
+            background-color: blueviolet; 
+            padding-bottom: 500px;
+            margin-bottom: -500px; /* 注意理解这一部分的意思  */         
+        }
+        .two{
+            float: left;
+            width: 33.3%;
+            height: 500px;
+            background-color: rgb(226, 43, 119);            
+            padding-bottom: 500px;
+            margin-bottom: -500px; 
+        }
+        .three{
+            float: left;
+            width: 33.3%;
+            height: 400px;
+            background-color: rgb(43, 122, 226);            
+            padding-bottom: 500px;
+            margin-bottom: -500px; 
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+    <div class="one"></div>  
+    <div class="two"></div> 
+    <div class="three"></div> 
+    </div>    
+</body>
+</html>
